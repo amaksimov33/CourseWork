@@ -42,21 +42,23 @@
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(254, 148);
+            this.label1.Location = new System.Drawing.Point(207, 148);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 25);
+            this.label1.Size = new System.Drawing.Size(185, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Диапозон до:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(273, 75);
+            this.label2.Location = new System.Drawing.Point(226, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 18);
+            this.label2.Size = new System.Drawing.Size(166, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Диапозон с:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // EndRandom
             // 
@@ -105,11 +107,12 @@
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(195, 222);
+            this.label3.Location = new System.Drawing.Point(148, 222);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 24);
+            this.label3.Size = new System.Drawing.Size(244, 24);
             this.label3.TabIndex = 9;
             this.label3.Text = "Количество попыток:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // CancelButton
             // 
