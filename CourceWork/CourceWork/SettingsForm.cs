@@ -30,11 +30,16 @@ namespace CourceWork
                 gameMainForm.Show();
         }
 
-        private void CancelButton_Click(object sender, EventArgs e)
+        private void CancelButton_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             GameMainForm gameMainForm = new GameMainForm();
             gameMainForm.Show();
+        }
+
+        private void SettingsForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

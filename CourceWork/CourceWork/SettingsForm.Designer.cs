@@ -33,9 +33,9 @@
             this.EndRandom = new System.Windows.Forms.TextBox();
             this.StartRandom = new System.Windows.Forms.TextBox();
             this.OkButton = new System.Windows.Forms.Button();
-            this.CancelButton = new System.Windows.Forms.Button();
             this.NumAttempt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.CancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -81,6 +81,7 @@
             // OkButton
             // 
             this.OkButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(191)))), ((int)(((byte)(110)))));
+            this.OkButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.OkButton.ForeColor = System.Drawing.Color.White;
             this.OkButton.Location = new System.Drawing.Point(247, 305);
             this.OkButton.Name = "OkButton";
@@ -89,18 +90,6 @@
             this.OkButton.Text = "Ок";
             this.OkButton.UseVisualStyleBackColor = false;
             this.OkButton.Click += new System.EventHandler(this.OkButton_Click);
-            // 
-            // CancelButton
-            // 
-            this.CancelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
-            this.CancelButton.ForeColor = System.Drawing.Color.White;
-            this.CancelButton.Location = new System.Drawing.Point(435, 303);
-            this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(102, 50);
-            this.CancelButton.TabIndex = 7;
-            this.CancelButton.Text = "Отмена";
-            this.CancelButton.UseVisualStyleBackColor = false;
-            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // NumAttempt
             // 
@@ -122,15 +111,28 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "Количество попыток:";
             // 
+            // CancelButton
+            // 
+            this.CancelButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(21)))), ((int)(((byte)(38)))));
+            this.CancelButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.CancelButton.ForeColor = System.Drawing.Color.White;
+            this.CancelButton.Location = new System.Drawing.Point(452, 303);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(102, 50);
+            this.CancelButton.TabIndex = 10;
+            this.CancelButton.Text = "Отмена";
+            this.CancelButton.UseVisualStyleBackColor = false;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click_1);
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(204)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.NumAttempt);
-            this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.OkButton);
             this.Controls.Add(this.StartRandom);
             this.Controls.Add(this.EndRandom);
@@ -139,6 +141,7 @@
             this.Name = "SettingsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SettingsForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,8 +154,8 @@
         private System.Windows.Forms.TextBox EndRandom;
         private System.Windows.Forms.TextBox StartRandom;
         private System.Windows.Forms.Button OkButton;
-        private System.Windows.Forms.Button CancelButton;
         private System.Windows.Forms.TextBox NumAttempt;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button CancelButton;
     }
 }

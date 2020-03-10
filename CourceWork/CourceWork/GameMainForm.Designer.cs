@@ -142,6 +142,7 @@
             this.Name = "GameMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameMainForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.GameMainForm_FormClosed);
             this.Load += new System.EventHandler(this.GameMainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

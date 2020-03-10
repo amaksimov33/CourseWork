@@ -24,9 +24,9 @@ namespace CourceWork
             gameMainForm.Show();
         }
 
-        private void StartForm_Load(object sender, EventArgs e)
+        private void StartForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }

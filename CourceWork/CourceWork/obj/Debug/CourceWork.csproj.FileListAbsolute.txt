@@ -9,3 +9,13 @@ C:\Users\User\Desktop\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.
 C:\Users\User\Desktop\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.StartForm.resources
 C:\Users\User\Desktop\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.GameMainForm.resources
 C:\Users\User\Desktop\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.SettingsForm.resources
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\bin\Debug\CourceWork.exe.config
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\bin\Debug\CourceWork.exe
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.csprojAssemblyReference.cache
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.GameMainForm.resources
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.SettingsForm.resources
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.StartForm.resources
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.Properties.Resources.resources
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.csproj.GenerateResource.cache
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.exe
+C:\Users\amaks\OneDrive\Рабочий стол\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.pdb

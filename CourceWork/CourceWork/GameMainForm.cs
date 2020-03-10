@@ -86,5 +86,9 @@ namespace CourceWork
             }
         }
 
+        private void GameMainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
