@@ -76,8 +76,8 @@ namespace CourceWork
             {
                 Message.ForeColor = Color.FromArgb(87, 20, 255);
                 Message.Text = "Задуманное компьютером число "+(inputValue > generatedNum ? "меньше" : "больше")+" введеного";
-                AttemptLabel.Text="Осталось попыток: "+ (attempt-1);
-                attempt -= 1; 
+                attempt -= 1;
+                AttemptLabel.Text = "Осталось попыток: " + attempt;
             }
             else
             {
