@@ -46,7 +46,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Диапозон до";
+            this.label1.Text = "Диапозон до:";
             // 
             // label2
             // 
@@ -56,7 +56,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 18);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Диапозон с";
+            this.label2.Text = "Диапозон с:";
             // 
             // EndRandom
             // 
@@ -120,7 +120,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(197, 24);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Количество попыток";
+            this.label3.Text = "Количество попыток:";
             // 
             // SettingsForm
             // 
