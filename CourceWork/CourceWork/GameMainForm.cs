@@ -10,11 +10,19 @@ using System.Windows.Forms;
 
 namespace CourceWork
 {
-    public partial class Form1 : Form
+    public partial class GameMainForm : Form
     {
-        public Form1()
+        int generatedNum;
+        public GameMainForm()
         {
             InitializeComponent();
         }
+
+        private void GameMainForm_Load(object sender, EventArgs e)
+        {
+            generatedNum = new Random().Next(9);
+            MessageBox.Show(Convert.ToString(generatedNum));
+        }
+
     }
 }
