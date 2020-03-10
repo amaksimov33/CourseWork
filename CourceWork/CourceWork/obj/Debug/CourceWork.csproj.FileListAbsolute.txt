@@ -8,3 +8,4 @@ C:\Users\User\Desktop\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.
 C:\Users\User\Desktop\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.pdb
 C:\Users\User\Desktop\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.StartForm.resources
 C:\Users\User\Desktop\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.GameMainForm.resources
+C:\Users\User\Desktop\GIT\CourseWork\CourceWork\CourceWork\obj\Debug\CourceWork.Settings.resources
