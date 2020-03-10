@@ -16,10 +16,12 @@ namespace CourceWork
         public static int startRandom = 0;
         public static int endRandom = 9;
         public static int numAttempt = 3;
-        public int attempt = 1;
+        public int attempt = numAttempt;
         public GameMainForm()
         {
             InitializeComponent();
+            InputNumLabel.Text = InputNumLabel.Text + " от " + startRandom + " до " + endRandom + ":";
+            AttemptLabel.Text = "Осталось попыток: " + attempt;
         }
 
         private void GameMainForm_Load(object sender, EventArgs e)
@@ -36,26 +38,53 @@ namespace CourceWork
         private void StartOver_Click(object sender, EventArgs e)
         {
             generatedNum = new Random().Next(startRandom, endRandom);
-            attempt = 1;
+            attempt = numAttempt;
+            Message.Text = "";
+            AttemptLabel.Text = "";
         }
 
         private void Settings_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Settings settings = new Settings();
+            SettingsForm settings = new SettingsForm();
             settings.Show();
         }
 
         private void CheckNum_Click(object sender, EventArgs e)
         {
-            if(Convert.ToInt32(userInputBox.Text) == generatedNum)
-            {
-                Message.Text = "Вы отгадали!";
+            string Str = userInputBox.Text.Trim();
+            int inputValue;
+            bool isNum = int.TryParse(Str, out inputValue);
+            if (!isNum) {
+                Message.ForeColor = Color.FromArgb(87, 20, 255);
+                Message.Text = "Необходимо ввести число";
+                return;
             }
-            else if(attempt<=3)
+            else if (inputValue< startRandom || inputValue>endRandom)
             {
-                attempt += 1;
+                Message.ForeColor = Color.FromArgb(87, 20, 255);
+                Message.Text = "Число выходит за допустимый диапозон";
+                return;
+            }
+            else if (inputValue == generatedNum)
+            {
+                Message.ForeColor = Color.FromArgb(184, 9, 237);
+                Message.Text = "Вы отгадали!";
+                AttemptLabel.Text = "";
+            }
+            else if(attempt != 0)
+            {
+                Message.ForeColor = Color.FromArgb(87, 20, 255);
+                Message.Text = "Задуманное компьютером число "+(inputValue > generatedNum ? "меньше" : "больше")+" введеного";
+                AttemptLabel.Text="Осталось попыток: "+ (attempt-1);
+                attempt -= 1; 
+            }
+            else
+            {
+                Message.ForeColor = Color.FromArgb(250, 20, 20);
+                Message.Text = "Попытки закончились, начните занова";
             }
         }
+
     }
 }

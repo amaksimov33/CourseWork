@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CourceWork
 {
-    public partial class Settings : Form
+    public partial class SettingsForm : Form
     {
-        public Settings()
+        public SettingsForm()
         {
             InitializeComponent();
             StartRandom.Text = Convert.ToString(GameMainForm.startRandom);
@@ -20,11 +20,18 @@ namespace CourceWork
             NumAttempt.Text = Convert.ToString(GameMainForm.numAttempt);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void OkButton_Click(object sender, EventArgs e)
         {
-            GameMainForm.startRandom = Convert.ToInt32(StartRandom.Text);
-            GameMainForm.endRandom = Convert.ToInt32(EndRandom.Text);
-            GameMainForm.numAttempt = Convert.ToInt32(NumAttempt.Text);
+                GameMainForm.startRandom = Convert.ToInt32(StartRandom.Text);
+                GameMainForm.endRandom = Convert.ToInt32(EndRandom.Text);
+                GameMainForm.numAttempt = Convert.ToInt32(NumAttempt.Text);
+                this.Hide();
+                GameMainForm gameMainForm = new GameMainForm();
+                gameMainForm.Show();
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
             this.Hide();
             GameMainForm gameMainForm = new GameMainForm();
             gameMainForm.Show();

@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.userInputBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.InputNumLabel = new System.Windows.Forms.Label();
             this.CheckNum = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.StartOver = new System.Windows.Forms.Button();
             this.Settings = new System.Windows.Forms.Button();
             this.Message = new System.Windows.Forms.Label();
+            this.AttemptLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // userInputBox
@@ -47,15 +48,16 @@
             this.userInputBox.TabIndex = 0;
             this.userInputBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label1
+            // InputNumLabel
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(310, 167);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Введите число";
+            this.InputNumLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.InputNumLabel.ForeColor = System.Drawing.Color.Black;
+            this.InputNumLabel.Location = new System.Drawing.Point(167, 165);
+            this.InputNumLabel.Name = "InputNumLabel";
+            this.InputNumLabel.Size = new System.Drawing.Size(440, 27);
+            this.InputNumLabel.TabIndex = 1;
+            this.InputNumLabel.Text = "Введите число";
+            this.InputNumLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CheckNum
             // 
@@ -105,12 +107,22 @@
             // 
             this.Message.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.Message.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(9)))), ((int)(((byte)(237)))));
-            this.Message.Location = new System.Drawing.Point(141, 254);
+            this.Message.Location = new System.Drawing.Point(5, 254);
             this.Message.Name = "Message";
-            this.Message.Size = new System.Drawing.Size(502, 35);
+            this.Message.Size = new System.Drawing.Size(783, 35);
             this.Message.TabIndex = 6;
             this.Message.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Message.UseMnemonic = false;
+            // 
+            // AttemptLabel
+            // 
+            this.AttemptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.AttemptLabel.ForeColor = System.Drawing.Color.Black;
+            this.AttemptLabel.Location = new System.Drawing.Point(235, 387);
+            this.AttemptLabel.Name = "AttemptLabel";
+            this.AttemptLabel.Size = new System.Drawing.Size(316, 33);
+            this.AttemptLabel.TabIndex = 7;
+            this.AttemptLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GameMainForm
             // 
@@ -118,12 +130,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(204)))), ((int)(((byte)(200)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.AttemptLabel);
             this.Controls.Add(this.Message);
             this.Controls.Add(this.Settings);
             this.Controls.Add(this.StartOver);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.CheckNum);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.InputNumLabel);
             this.Controls.Add(this.userInputBox);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "GameMainForm";
@@ -138,11 +151,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox userInputBox;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label InputNumLabel;
         private System.Windows.Forms.Button CheckNum;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button StartOver;
         private System.Windows.Forms.Button Settings;
         private System.Windows.Forms.Label Message;
+        private System.Windows.Forms.Label AttemptLabel;
     }
 }
