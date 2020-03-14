@@ -55,34 +55,31 @@ namespace CourceWork
             string Str = userInputBox.Text.Trim();
             int inputValue;
             bool isNum = int.TryParse(Str, out inputValue);
-            if (!isNum) {
+            if(attempt == 0)
+            {
+                Message.ForeColor = Color.FromArgb(250, 20, 20);
+                Message.Text = "Попытки закончились, начните занова";
+            }
+            else if (!isNum) {
                 Message.ForeColor = Color.FromArgb(87, 20, 255);
                 Message.Text = "Необходимо ввести число";
                 return;
-            }
-            else if (inputValue< startRandom || inputValue>endRandom)
+            }else if (inputValue< startRandom || inputValue>endRandom)
             {
                 Message.ForeColor = Color.FromArgb(87, 20, 255);
                 Message.Text = "Число выходит за допустимый диапозон";
                 return;
-            }
-            else if (inputValue == generatedNum)
+            } else if (inputValue == generatedNum)
             {
                 Message.ForeColor = Color.FromArgb(184, 9, 237);
                 Message.Text = "Вы отгадали!";
                 AttemptLabel.Text = "";
-            }
-            else if(attempt != 0)
+            } else
             {
                 Message.ForeColor = Color.FromArgb(87, 20, 255);
                 Message.Text = "Задуманное компьютером число "+(inputValue > generatedNum ? "меньше" : "больше")+" введеного";
                 attempt -= 1;
                 AttemptLabel.Text = "Осталось попыток: " + attempt;
-            }
-            else
-            {
-                Message.ForeColor = Color.FromArgb(250, 20, 20);
-                Message.Text = "Попытки закончились, начните занова";
             }
         }
 
